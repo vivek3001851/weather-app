@@ -104,9 +104,9 @@ app.get('*', (req,res)=>{
         errorMassage:'this page is not found'
     })
 })
-app.listen( port, ()=>{
+app.listen(port, ()=>{
     
-    console.log('the server is running on 3000 Fucking port')
+    console.log(`Server Running at port ${port}`)
 
 })
 
