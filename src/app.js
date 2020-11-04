@@ -2,6 +2,7 @@ const geocode= require('./utils/geocode')
 const forecast= require('./utils/forecast')
 const express= require('express')
 const app= express()
+const port=process.env.PORT || 3000
 const path= require('path')
 const hbs=require('hbs')
 //path joining
@@ -103,7 +104,7 @@ app.get('*', (req,res)=>{
         errorMassage:'this page is not found'
     })
 })
-app.listen( 3000, ()=>{
+app.listen( port, ()=>{
     
     console.log('the server is running on 3000 Fucking port')
 
